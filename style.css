@@ -6,7 +6,7 @@ body {
 
 .full-screen-page {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* navigation bar section */
@@ -33,15 +33,22 @@ body {
 
 /* header-section */
 .header-section {
-  background-image: url("");
+  background-image: url("images/pbr.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ffffff;
+}
+.header-content {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .header-section .header-logo {
   width: 150px;
@@ -58,3 +65,13 @@ body {
 
 /* header-section end*/
 
+/* secondary-pages section */
+.secondary {
+  background: url("images/sbr.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  mix-blend-mode: overlay;
+  opacity: 0.1;
+}
+/* secondary-pages section end */
