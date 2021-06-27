@@ -160,7 +160,7 @@ body {
   border-radius: 0.8rem;
 }
 .blog-post-button:hover {
-  background-image: linear-gradient(to right, #f6cd01 0%, #ff8d00 100%);
+  background-color: #f6de01;
   color: black;
 }
 
