@@ -89,7 +89,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 60px;
+  padding: 50px;
+}
+.blog-header {
+  color: #ffffff;
+  padding-top: 30px;
+  font-weight: bold;
 }
 
 .blog-post {
