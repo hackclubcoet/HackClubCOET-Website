@@ -29,6 +29,9 @@ body {
   text-align: center;
 }
 
+.yellow {
+  color: #f6cd01;
+}
 /* common styled end */
 
 /* navigation bar section */
@@ -339,3 +342,64 @@ body {
 
 
 /* event-page section end */
+
+/* contact-page section */
+
+.contact-section {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  width: 100%;
+}
+.contact-form {
+  margin: 30px;
+  text-align: center;
+}
+.form-control {
+  font-size: 15px;
+  margin: 10px;
+  border-radius: 0.5rem;
+}
+.form-group textarea {
+  width: 100%;
+}
+.btnContact {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 5px 13px;
+  background-color: #f6cd01;
+}
+.btnContact:hover {
+  background-color: #f6de01;
+}
+
+.contact-form-section {
+  border-right: 1px solid white;
+}
+.fa-map-marker {
+  font-size: 35px;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  color: #ffffff;
+}
+.mail {
+  text-decoration: none;
+  margin-top: 15px;
+  color: rgba(251, 251, 251, 0.8);
+  font-size: 15px;
+  cursor: pointer;
+}
+.mail:hover {
+  color: #ffffff;
+}
+.fa-envelope {
+  font-size: 15px;
+}
+/* contact-page section end */
