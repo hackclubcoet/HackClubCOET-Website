@@ -253,14 +253,16 @@ body {
   box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
 
   padding: 0;
-  transition: transform 1s;
+  transition: transform 0.7s ease-in-out;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+  perspective: 1000px;
 }
 
-.event_box.is-flipped {
+.event_box:hover{
   transform: rotateY(180deg);
+  
 }
 
 .event_face {
