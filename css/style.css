@@ -398,6 +398,9 @@ body {
     border: none;
     border-bottom: 1px solid white;
   }
+  .contact-form {
+    margin: 30px 0;
+  }
   .location {
     margin: 10px;
   }
