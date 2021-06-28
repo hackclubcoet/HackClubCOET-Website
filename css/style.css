@@ -105,6 +105,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 50px;
+  padding-top: 60px;
 }
 
 .blog-post {
@@ -172,7 +173,7 @@ body {
 @media screen and (max-width: 868px) {
   .blog-post {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 30px;
     padding-bottom: 2rem;
   }
@@ -198,6 +199,7 @@ body {
 @media screen and (max-width: 768px) {
   .blog-section {
     padding: 0;
+    padding-top: 60px;
     margin: 0;
   }
   .blog-post-info {
