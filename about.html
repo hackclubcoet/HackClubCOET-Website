@@ -23,7 +23,6 @@
     />
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
   </head>
 
   <body>
@@ -76,27 +75,41 @@
         />
         <span class="header-title">WHO ARE WE</span>
         <span class="header-subtitle">Hack Club COET</span>
+
+        <a href="#page-1" class="btn-xs header-scroll-btn"
+          >Scroll Down
+          <span class="fa fa-chevron-down"></span>
+        </a>
       </div>
     </div>
-    <div class="full-screen-page secondary">
+    <div class="full-screen-page secondary" id="page-1">
       <div class="about-page-section">
         <div class="about-us">
           <span>About</span>
           <span>Us</span>
           <div class="about-us-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci necessitatibus aut vero optio ab magnam maxime neque numquam suscipit voluptatibus hic, ullam magni odit quidem et consequatur nemo voluptatem consequuntur.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              necessitatibus aut vero optio ab magnam maxime neque numquam
+              suscipit voluptatibus hic, ullam magni odit quidem et consequatur
+              nemo voluptatem consequuntur.
+            </p>
           </div>
         </div>
         <div class="our-aim">
           <span>Our</span>
           <span>Aim</span>
           <div class="our-aim-content">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas id a ut ea dolores praesentium maxime perferendis rerum earum non numquam fuga dolorem eligendi aspernatur, et temporibus incidunt ab maiores?</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              id a ut ea dolores praesentium maxime perferendis rerum earum non
+              numquam fuga dolorem eligendi aspernatur, et temporibus incidunt
+              ab maiores?
+            </p>
           </div>
         </div>
       </div>
     </div>
-
 
     <!-- Footer -->
     <footer class="text-center text-white secondary">
@@ -130,9 +143,9 @@
         </section>
         <section class="email-subscription-section col-md-8">
           <form action="" id="subscription-form">
-            <div class="row d-flex ">
+            <div class="row d-flex">
               <div class="col-md-12 newsletter-elements newsletter-heading">
-                  <span>subscribe for newsletter</span>
+                <span>subscribe for newsletter</span>
               </div>
               <div class="col-md-8 newsletter-elements">
                 <div class="form-outline form-white mb-4">
@@ -159,11 +172,13 @@
         class="text-center p-3 footer-copyright"
         style="background-color: rgba(0, 0, 0, 0.2)"
       >
-        <span>&copy;
+        <span
+          >&copy;
           <script>
-          document.write(new Date().getFullYear());
-        </script>
-        | Hack Club COET</span>
+            document.write(new Date().getFullYear());
+          </script>
+          | Hack Club COET</span
+        >
       </div>
       <!-- Copyright -->
     </footer>
@@ -190,6 +205,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/sendData.js"></script>
-
   </body>
 </html>

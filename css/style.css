@@ -2,6 +2,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   width: 100vw;
@@ -17,6 +18,7 @@ body {
 .full-screen-page {
   width: 100vw;
   min-height: 100vh;
+  position: relative;
 }
 
 /* common styled */
@@ -31,6 +33,26 @@ body {
 
 .yellow {
   color: #f6cd01;
+}
+
+.btn-xs {
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  border-radius: 1rem;
+  font-size: 15px;
+  opacity: 0.6;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn-xs:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+.scroll-btn {
+  right: 50px;
 }
 /* common styled end */
 
@@ -510,6 +532,12 @@ footer {
   width: 100%;
 }
 
+@media (max-width: 750px) {
+  .newsletter-heading {
+    justify-content: center;
+  }
+}
+
 /* footer section end */
 
 /* about-us section */
@@ -517,7 +545,6 @@ footer {
   width: 100%;
   height: auto;
   padding: 10px;
-  
 }
 .about-us {
   color: #ffffff;
@@ -556,10 +583,30 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 600px){
-  .about-us, .our-aim{
+@media (max-width: 600px) {
+  .about-us,
+  .our-aim {
     padding-left: 0;
     padding-right: 0;
   }
 }
 /*about-us section end*/
+
+/* home-page section */
+
+/* latest-blog section */
+.home-page-subheading {
+  margin-top: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.latest-blog-box {
+  background-color: #ffffff;
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 0.8rem;
+}
+/* latest-blog section end */
+
+/* home-page section end */
