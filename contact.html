@@ -22,6 +22,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -237,23 +238,22 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $("#contact-form").submit((e)=>{
-          e.preventDefault()
-          $.ajax({
-              url:"",
-              data:$("#contact-form").serialize(),
-              method:"post",
-              success:function (response){
-                  alert("Message Sent Successfully")
-                  window.location.reload()
-                  //window.location.href="https://google.com"
-              },
-              error:function (err){
-                  alert("Something Wrong!")
-  
-              }
-          })
-      })
-  </script>
+      $("#contact-form").submit((e) => {
+        e.preventDefault();
+        $.ajax({
+          url: "https://script.google.com/macros/s/AKfycbx5pRxFaOli66LltEBqmEuY83hp98kGfXQy88lzWdJybRHePjN9wcVO7amjmc81FMS0OQ/exec",
+          data: $("#contact-form").serialize(),
+          method: "post",
+          success: function (response) {
+            alert("Message Sent Successfully");
+            window.location.reload();
+            //window.location.href="https://google.com"
+          },
+          error: function (err) {
+            alert("Something Wrong!");
+          },
+        });
+      });
+    </script>
   </body>
 </html>
