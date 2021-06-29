@@ -511,10 +511,13 @@ footer {
 }
 
 /* footer section end */
+
 /* about-us section */
 .about-page-section {
   width: 100%;
-  height: 100%;
+  height: auto;
+  padding: 10px;
+  
 }
 .about-us {
   color: #ffffff;
@@ -553,4 +556,10 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 600px){
+  .about-us, .our-aim{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 /*about-us section end*/
