@@ -175,7 +175,7 @@
           ></a>
         </section>
         <section class="email-subscription-section col-md-8">
-          <form action="">
+          <form action="" id="subscription-form">
             <div class="row d-flex">
               <div class="col-md-12 newsletter-elements newsletter-heading">
                 <span>subscribe for newsletter</span>
@@ -184,7 +184,7 @@
                 <div class="form-outline form-white mb-4">
                   <input
                     type="email"
-                    id="form5Example2"
+                    name="email"
                     class="form-control"
                     placeholder="email"
                   />
@@ -237,23 +237,6 @@
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
-    <script>
-      $("#contact-form").submit((e) => {
-        e.preventDefault();
-        $.ajax({
-          url: "https://script.google.com/macros/s/AKfycbx5pRxFaOli66LltEBqmEuY83hp98kGfXQy88lzWdJybRHePjN9wcVO7amjmc81FMS0OQ/exec",
-          data: $("#contact-form").serialize(),
-          method: "post",
-          success: function (response) {
-            alert("Message Sent Successfully");
-            window.location.reload();
-            //window.location.href="https://google.com"
-          },
-          error: function (err) {
-            alert("Something Wrong!");
-          },
-        });
-      });
-    </script>
+    <script src="./js/sendData.js"></script>
   </body>
 </html>
