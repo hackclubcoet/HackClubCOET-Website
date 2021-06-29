@@ -22,7 +22,6 @@
     />
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
   </head>
 
   <body>
@@ -152,7 +151,6 @@
       </div>
     </div>
 
-
     <!-- Footer -->
     <footer class="text-center text-white secondary">
       <div class="footer-container p-4 row">
@@ -185,15 +183,15 @@
         </section>
         <section class="email-subscription-section col-md-8">
           <form action="" id="subscription-form">
-            <div class="row d-flex ">
+            <div class="row d-flex">
               <div class="col-md-12 newsletter-elements newsletter-heading">
-                  <span>subscribe for newsletter</span>
+                <span>subscribe for newsletter</span>
               </div>
               <div class="col-md-8 newsletter-elements">
                 <div class="form-outline form-white mb-4">
                   <input
                     type="email"
-                    id="form5Example2"
+                    name="email"
                     class="form-control"
                     placeholder="email"
                   />
@@ -214,11 +212,13 @@
         class="text-center p-3 footer-copyright"
         style="background-color: rgba(0, 0, 0, 0.2)"
       >
-        <span>&copy;
+        <span
+          >&copy;
           <script>
-          document.write(new Date().getFullYear());
-        </script>
-        | Hack Club COET</span>
+            document.write(new Date().getFullYear());
+          </script>
+          | Hack Club COET</span
+        >
       </div>
       <!-- Copyright -->
     </footer>
@@ -239,7 +239,11 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/sendData.js"></script>
-
   </body>
 </html>
