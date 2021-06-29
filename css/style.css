@@ -461,14 +461,14 @@ p {
   border-radius: 1rem;
 }
 
-@media (max-width: 750px){
+@media (max-width: 750px) {
   .fullblog-section {
     padding: 20px 0;
   }
-  .blog{
+  .blog {
     padding: 1.5rem;
   }
-  .blog-inner-image{
+  .blog-inner-image {
     margin: 0;
     margin-bottom: 1.5rem;
   }
@@ -478,9 +478,35 @@ p {
 
 /* footer section */
 
-footer{
+footer {
   align-self: flex-end;
   bottom: 0;
+}
+.footer-container {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+.footer-copyright {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+.email-subscription-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter-elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter-heading{
+  justify-content: left;
+}
+.newsletter-elements .form-outline{
+  width: 100%;
+}
+.newsletter-elements input {
+  width: 100%;
 }
 
 /* footer section end */

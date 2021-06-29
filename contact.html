@@ -81,7 +81,7 @@
         <div class="row contact-row">
           <div class="col-md-6 contact-form-section">
             <div class="section-header">Drop us a Message</div>
-            <form action="" class="contact-form form">
+            <form action="" class="contact-form form" id="contact-form">
               <div class="form-group">
                 <input
                   type="text"
@@ -134,16 +134,86 @@
               <span>College of Engineering, Thalassery</span>
               <span>Kannur, Kerala, India</span>
               <span>670107</span>
-              <a class="mail" href="mailto:hackclubcoetofficial@gmail.com">
+              <a class="mail" href="mailto:hackclubcoet@gmail.com">
                 <span class="fa fa-envelope"></span>
-                <span>hackclubcoetofficial@gmail.com</span>
+                <span>hackclubcoet@gmail.com</span>
               </a>
             </div>
           </div>
         </div>
-        <!-- website body here... -->
       </div>
     </div>
+    <!-- Footer -->
+    <footer class="text-center text-white secondary">
+      <div class="footer-container p-4 row">
+        <!-- Section: Social media -->
+        <section class="col-md-4">
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/hackclubcoet"
+            target="blank"
+            role="button"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.linkedin.com/company/hackclubcoet"
+            target="blank"
+            role="button"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/hackclubcoet"
+            target="blank"
+            role="button"
+            ><i class="fa fa-github"></i
+          ></a>
+        </section>
+        <section class="email-subscription-section col-md-8">
+          <form action="">
+            <div class="row d-flex">
+              <div class="col-md-12 newsletter-elements newsletter-heading">
+                <span>subscribe for newsletter</span>
+              </div>
+              <div class="col-md-8 newsletter-elements">
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="form5Example2"
+                    class="form-control"
+                    placeholder="email"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 newsletter-elements">
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3 footer-copyright"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        <span
+          >&copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          | Hack Club COET</span
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <!-- JavaScript section -->
     <script
@@ -161,5 +231,29 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#contact-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"",
+              data:$("#contact-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Message Sent Successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Wrong!")
+  
+              }
+          })
+      })
+  </script>
   </body>
 </html>
