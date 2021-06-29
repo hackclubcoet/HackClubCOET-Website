@@ -475,3 +475,12 @@ p {
 }
 
 /* blog-template section end */
+
+/* footer section */
+
+footer{
+  align-self: flex-end;
+  bottom: 0;
+}
+
+/* footer section end */
