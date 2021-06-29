@@ -475,3 +475,50 @@ p {
 }
 
 /* blog-template section end */
+
+/* about-us section */
+.about-page-section{
+  width: 100%;
+  height: 100%;
+  
+}
+.about-us{
+  color: #ffffff; 
+  padding-top: 120px;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+}
+
+.about-us span{
+  font-size: 30px;
+  font-weight: bolder; 
+}
+
+.about-us p{
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.our-aim{
+  color: #ffffff; 
+  padding-top: 50px;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+}
+
+.our-aim span{
+  font-size: 30px;
+  font-weight: bolder; 
+}
+.our-aim p{
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/*about-us section end*/
