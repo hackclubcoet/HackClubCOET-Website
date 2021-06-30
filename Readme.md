@@ -1,3 +1,3 @@
 # Official Website for Hack Club COET
 
-Production Live at: [coet.hackclub.com](https://www.coet.hackclub.com)
+Production Live at: [coet.hackclub.com](https://coet.hackclub.com)
