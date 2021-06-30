@@ -62,7 +62,11 @@ body {
 .view-more {
   text-align: center;
 }
-
+@media (max-width: 600px) {
+  .scroll-btn {
+    display: none;
+  }
+}
 /* common styled end */
 
 /* navigation bar section */
