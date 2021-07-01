@@ -61,6 +61,7 @@ body {
 }
 .view-more {
   text-align: center;
+  width: 150px;
 }
 @media (max-width: 600px) {
   .scroll-btn {
